@@ -1,7 +1,7 @@
 package com.pickgang.board.global.response;
 
 import com.fasterxml.jackson.annotation.JsonInclude;
-import com.pickgang.user.global.exception.error.ErrorCode;
+import com.pickgang.board.global.exception.error.ErrorCode;
 import lombok.Builder;
 import lombok.Getter;
 import org.springframework.http.HttpStatus;
@@ -31,14 +31,6 @@ public class ApiResponse<T> {
     }
 
     public static <T> ApiResponse<T> success(T data, String message) {
-        return ApiResponse.<T>builder()
-                .code(SUCCESS_CODE)
-                .message(message)
-                .data(data)
-                .build();
-    }
-
-    public static <T> ApiResponse<T> success(T data, String message, HttpStatus httpStatus) {
         return ApiResponse.<T>builder()
                 .code(SUCCESS_CODE)
                 .message(message)

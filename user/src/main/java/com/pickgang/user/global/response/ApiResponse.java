@@ -38,14 +38,6 @@ public class ApiResponse<T> {
                 .build();
     }
 
-    public static <T> ApiResponse<T> success(T data, String message, HttpStatus httpStatus) {
-        return ApiResponse.<T>builder()
-                .code(SUCCESS_CODE)
-                .message(message)
-                .data(data)
-                .build();
-    }
-
     public static <T> ApiResponse<T> fail(ErrorCode error) {
         return ApiResponse.<T>builder()
                 .code(error.getCode())

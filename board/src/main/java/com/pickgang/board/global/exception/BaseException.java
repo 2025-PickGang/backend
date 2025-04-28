@@ -1,6 +1,6 @@
 package com.pickgang.board.global.exception;
 
-import com.pickgang.user.global.exception.error.ErrorCode;
+import com.pickgang.board.global.exception.error.ErrorCode;
 import lombok.Getter;
 
 @Getter

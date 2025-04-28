@@ -1,6 +1,5 @@
 package com.pickgang.board.global.exception.error;
 
-import com.pickgang.user.global.exception.error.ErrorDisplayType;
 import lombok.AllArgsConstructor;
 import lombok.Getter;
 
